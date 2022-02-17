@@ -42,14 +42,17 @@ h1, h2, h3 {
     row-gap: 10px;
     column-gap: 15px;
 }
+@media (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    } 
+}
 .pokemon-card{
     display: flex;
     flex-direction: column;
     border: 10px solid black;
     border-radius: 15px;
-}
-.pokemon-card img:hover{
-
 }
 .pokemon-name {
     font-size: 2.8rem;
@@ -78,9 +81,6 @@ h1, h2, h3 {
     color: white;
     cursor: pointer;
 }
-.boton-inicio {
-    
-}
 .boton-inicio a{
     text-decoration: none;
     font-size: 4rem;
@@ -94,10 +94,6 @@ h1, h2, h3 {
     position: fixed;
     bottom: 25px;
     right: 10px;
-}
-
-.footer {
-
 }
 .footer p {
     margin-top: 2rem;
