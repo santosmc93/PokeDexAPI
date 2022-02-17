@@ -1,0 +1,110 @@
+:root {
+    --yellow: #ffcb05;
+    --lightBlue: #2a75bb;
+    --yellowShadow: #c7a008;
+    --darkBlue: #3c5aa6;
+    --black: #000000;
+    --white: #ffffff;
+    --red: #FB1B1B;
+    --grey: #DFDFDF;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--grey );
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.header {
+    height: 10rem;
+    background-color: var(--red);
+}
+.header h1 {
+    text-align: center;
+    color: white;
+    line-height: 10rem;
+    font-size: 4rem;
+}
+
+.container {
+    width: 90%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 15px;
+}
+.pokemon-card{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid black;
+    border-radius: 15px;
+}
+.pokemon-card img:hover{
+
+}
+.pokemon-name {
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--yellow);
+    text-transform: uppercase;
+}
+.pokemon-card p {
+    font-size: 2.2rem;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.pokemon-card .descripcion {
+    background-color: var(--lightBlue);
+}
+.boton-ver{
+    display: block;
+    margin: 0 auto;
+    height: 5rem;
+    width: auto;
+    font-size: 3rem;
+    border-radius: 5px;
+    background-color: var(--darkBlue);
+    color: white;
+    cursor: pointer;
+}
+.boton-inicio {
+    
+}
+.boton-inicio a{
+    text-decoration: none;
+    font-size: 4rem;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    line-height: 10rem;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+}
+
+.footer {
+
+}
+.footer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #000000;
+    color: white;
+}
